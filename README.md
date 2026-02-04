@@ -78,7 +78,7 @@ Password: sg123
 3. Add, view, or delete questions
 
 ##  Future Improvements (add following functions like)
-- [ ] Add difficulty levels
-- [ ] Add leaderboard
-- [ ] Add question timer customization
+-  Add difficulty levels
+-  Add leaderboard
+-  Add question timer customization
 
