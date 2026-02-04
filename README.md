@@ -25,18 +25,7 @@ Quiz web application with admin login, admin panel, add/delete questions in admi
 
 ##  Live Demo
 
-[Click here to view live demo](YOUR_VERCEL_URL_HERE)
-
-## Screenshots
-
-### Landing Page
-![Landing Page](screenshots/landing.png)
-
-### Quiz Interface
-![Quiz](screenshots/quiz.png)
-
-### Admin Panel
-![Admin](screenshots/admin.png)
+[Click here to view live demo](quizweb1-o8q5k1avi-princeaeri06-droids-projects.vercel.app)
 
 ## Technologies Used
 
