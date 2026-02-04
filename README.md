@@ -82,8 +82,3 @@ Password: sg123
 - [ ] Add leaderboard
 - [ ] Add question timer customization
 
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@your_username](https://github.com/your_username)
-- LinkedIn: [Your Name](https://linkedin.com/in/your_profile)
