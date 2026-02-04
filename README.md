@@ -21,7 +21,7 @@ Quiz web application with admin login, admin panel, add/delete questions in admi
 - ✅ Scoring System
   - Positive marking for correct answers
   - Negative marking for wrong answers
-  - Zero marks for unanswered questions
+  - Zero marks for unanswered questions 
 
 ##  Live Demo
 
