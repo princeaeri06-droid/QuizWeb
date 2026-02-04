@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Quiz CMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Header -->
+        <header class="admin-header">
+            <h1>📋 Quiz Admin Panel</h1>
+            <button class="btn btn-danger" onclick="logout()">Logout</button>
+        </header>
+
+        <div class="admin-content">
+            <!-- Add Question Form -->
+            <div class="card admin-card">
+                <h2> Add New Question</h2>
+                <form id="questionForm">
+                    <div class="form-group">
+                        <label for="question">Question Text</label>
+                        <textarea id="question" rows="3" placeholder="Enter your question here..." required></textarea>
+                    </div>
+                    
+                    <div class="options-grid">
+                        <div class="form-group">
+                            <label for="option1">Option A</label>
+                            <input type="text" id="option1" placeholder="Option A" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="option2">Option B</label>
+                            <input type="text" id="option2" placeholder="Option B" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="option3">Option C</label>
+                            <input type="text" id="option3" placeholder="Option C" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="option4">Option D</label>
+                            <input type="text" id="option4" placeholder="Option D" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="correctAnswer">Correct Answer</label>
+                            <select id="correctAnswer" required>
+                                <option value="">Select correct option</option>
+                                <option value="0">Option A</option>
+                                <option value="1">Option B</option>
+                                <option value="2">Option C</option>
+                                <option value="3">Option D</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="marks">Marks for Correct Answer</label>
+                            <input type="number" id="marks" value="4" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="negativeMarks">Negative Marks (for wrong)</label>
+                            <input type="number" id="negativeMarks" value="1" min="0" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Add Question</button>
+                </form>
+            </div>
+
+            <!-- Questions List -->
+            <div class="card admin-card">
+                <h2>📝 All Questions (<span id="questionCount">0</span>)</h2>
+                <div id="questionsList" class="questions-list">
+                    <!-- Questions will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
