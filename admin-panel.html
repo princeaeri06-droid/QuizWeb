@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #f0f0f0;">
+
+    <div class="top-bar">
+        <h2>Admin Panel</h2>
+        <button class="btn red-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="admin-body">
+
+        <div class="box">
+            <h3>Add New Question</h3>
+            <hr>
+            <br>
+            <form id="questionForm">
+                <label>Question:</label><br>
+                <textarea id="question" rows="3" style="width:100%;" placeholder="Type question here..." required></textarea>
+                <br><br>
+
+                <div class="two-col">
+                    <div>
+                        <label>Option A</label><br>
+                        <input type="text" id="option1" placeholder="Option A" required>
+                    </div>
+                    <div>
+                        <label>Option B</label><br>
+                        <input type="text" id="option2" placeholder="Option B" required>
+                    </div>
+                    <div>
+                        <label>Option C</label><br>
+                        <input type="text" id="option3" placeholder="Option C" required>
+                    </div>
+                    <div>
+                        <label>Option D</label><br>
+                        <input type="text" id="option4" placeholder="Option D" required>
+                    </div>
+                </div>
+                <br>
+
+                <label>Correct Answer:</label>
+                <select id="correctAnswer" required>
+                    <option value="">-- select --</option>
+                    <option value="0">A</option>
+                    <option value="1">B</option>
+                    <option value="2">C</option>
+                    <option value="3">D</option>
+                </select>
+
+                &nbsp;&nbsp;
+                <label>Marks:</label>
+                <input type="number" id="marks" value="4" min="1" style="width:60px;" required>
+
+                &nbsp;&nbsp;
+                <label>Negative:</label>
+                <input type="number" id="negativeMarks" value="1" min="0" style="width:60px;" required>
+
+                <br><br>
+                <button type="submit" class="btn">Add Question</button>
+            </form>
+        </div>
+
+        <div class="box">
+            <h3>All Questions (<span id="questionCount">0</span>)</h3>
+            <hr>
+            <div id="questionsList"></div>
+        </div>
+    </div>
+
+    <script src="admin-panel.js"></script>
+</body>
+</html>

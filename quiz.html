@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-box">
+
+    
+        <div class="quiz-top">
+            <span id="questionNumber">Question 1/5</span>
+            <span id="currentScore">Score: 0</span>
+            <span class="timer-box" id="timer">Time: <span id="timeLeft">30</span>s</span>
+        </div>
+
+
+        <div style="background:#ddd; height:6px; margin-bottom:15px; border-radius:3px;">
+            <div id="progressBar" style="height:100%; width:0%; background:#4a6cf7; border-radius:3px;"></div>
+        </div>
+
+        <div id="quizContent">
+
+            <div id="startScreen">
+                <h2>Ready?</h2>
+                <ul style="text-align:left; margin:15px 0;">
+                    <li>30 seconds per question</li>
+                    <li>+4 for correct answer</li>
+                    <li>-1 for wrong answer</li>
+                    <li>0 for unanswered</li>
+                </ul>
+                <button class="btn" onclick="startQuiz()">Start Quiz</button>
+                <br><br>
+                <a href="index.html">Back to Home</a>
+            </div>
+
+          
+            <div id="questionScreen" style="display:none;">
+                <h3 id="questionText"></h3>
+                <div id="optionsContainer"></div>
+                <br>
+                <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>Next</button>
+            </div>
+
+       
+            <div id="resultScreen" style="display:none;">
+                <h2>Quiz Done!</h2>
+                <p>Score: <b id="finalScore">0</b></p>
+                <p>Correct: <span id="correctAnswers">0</span></p>
+                <p>Wrong: <span id="wrongAnswers">0</span></p>
+                <p>Unanswered: <span id="unanswered">0</span></p>
+                <br>
+                <p id="resultMessage"></p>
+                <br>
+                <button class="btn" onclick="location.reload()">Try Again</button>
+                &nbsp;
+                <a href="index.html"><button class="btn grey-btn">Home</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
